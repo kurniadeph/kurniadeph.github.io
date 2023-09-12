@@ -1,234 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device, initial-scale=1">
-
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- my css -->
-    <link rel="stylesheet" href="css/style.css">    
-    <title>deph Portfolio</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For Title & SEO -->
+    <title>c'Putra Portfolio</title>
+    <meta name="description" content="Portfolio">
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
   </head>
+  
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color:#16bbd8">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">KURNIA DEPH</a>
-        <button class="navbar-toggler" type="button" data-base-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation"
-          <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+    <div class="container">
+      <!-- ------- Header------- -->
+      <nav id="header">
+          <div class="nav-logo">
+            <span class="nav-name">c'</span>
+            <p>Putra</p>
+          </div>
+          <div class="nav-menu" id="myNavMenu">
+            <ul class="nav-menu-list">
+              <li class="nav-list">
+                <a href="#beranda" class="nav-link active-link">Beranda</a>
+              </li>
+              <li class="nav-list">
+                <a href="#profil" class="nav-link">Profil</a>
+              </li>
+              <li class="nav-list">
+                <a href="#project" class="nav-link">Project</a>
+              </li>
+              <li class="nav-list">
+                <a href="#work" class="nav-link">Pekerjaan</a>
+              </li>
+              <li class="nav-list">
+                <a href="#kontak" class="nav-link">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-menu-btn">
+            <ion-icon name="menu-outline" onclick="myMenuFunction()"></ion-icon>
+          </div>
+      </nav>
+      
+      <!-- --------- MAIN --------- -->
+      <main class="wrapper">
+          <!-- Beranda -->
+        <section class="style-box" id="beranda">
+
+            <div class="style-text">
+              <div class="style-text-name">
+                <span>Kurnia DC Putra</span>
+              </div>
+              <div class="style-text-lead">
+              <p>i'am<p>skill <span class="typeText"></span></p></p>
+              </div>
+              <div class="style-text-caption">
+                <p>Desain Creative, Desain Grafis, Web Develop. <br>Kerja Pintar Yes!<br>Kerja Kreatif Yess!</p>
+              </div>
+              <div class="style-text-btn">
+                <button class="btn color-btn">Undang Saya</button>
+                <button class="btn">Download CV</button>
+              </div>
+              <div class="social-icon">
+                <div class="icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                <div class="icon"><ion-icon name="logo-instagram"></ion-icon></div>
+                <div class="icon"><ion-icon name="logo-github"></ion-icon></div>
+              </div>
+            </div>
+            <div class="style-image">
+              <div class="image">
+                  <img src="./asset/profil.png" alt="Profile">
+              </div>
+            </div>
+            <div class="style-scroll-box">
+              <a href="#profil" class="scroll-btn">
+                <p>Gulir Bawah</p>
+                <ion-icon name="arrow-down-circle-outline"></ion-icon>
+              </a>
+            </div>
+
+        </section>
+        <!-- About Me / Profil-->
+        <section class="section" id="profil">
+
+          <div class="top-header">
+            <h1>Tentang Saya</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="profil-info">
+                <h3>Perkenalkan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem, sint sed consectetur et fugit numquam!
+                  Perferendis corporis accusantium distinctio natus. Ratione cum delectus expedita et, obcaecati quo nobis repellat?</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skill-box">
+                <div class="skill-header">
+                  <h3>Desain</h3>
+                </div>
+                <div class="skill-list">
+                  <p>Photoshop</p>
+                  <p>Illustrator</p>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-header">
+                  <h3>Programing</h3>
+                </div>
+                <div class="skill-list">
+                  <p>HTML</p>
+                  <p>CSS</span>
+                  <p>Bootstrap</p>
+                  <p>GSAP</p>
+                  <p>Python</p>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-header">
+                  <h3>Microsoft</h3>
+                </div>
+                <div class="skill-list">
+                  <p>Word</p>
+                  <p>Excel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- Project Card -->
+        <section class="section" id="project">
+          <div class="top-header">
+            <h1>Project</h1>
+          </div>
+          <div class="project-container">
+            <article class="card">
+              <figure>
+                <img class="article-img" src="./asset/img/img1.jpg" alt="Project1">
+                <figcaption>
+                  <h3 class="title">Project 1</h3>
+                  <span class="detail">Lorem, ipsum dolor.</span>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="card">
+              <figure>
+                <img class="article-img" src="./asset/img/img2.jpg" alt="Project2">
+                <figcaption>
+                  <h3 class="title">Project 2</h3>
+                  <span class="detail">Lorem ipsum dolor sit amet.</span>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="card">
+              <figure>
+                <img class="article-img" src="./asset/img/img3.png" alt="Project3">
+                <figcaption>
+                  <h3 class="title">Project 3</h3>
+                  <span class="detail">Lorem ipsum dolor sit.</span>
+                </figcaption>
+              </figure>
+            </article>
+            <!-- <div class="row-project-card">
+              <div class="col-project">
+                  <div class="card">
+                    <a href="#" target="_blank" class="project-card-btn">Lihat&nbsp;Detail</a>
+                    <img src="/asset/img/img1.jpg" alt="project" class="card-top">
+                    <div class="card-caption">
+                      <p class="cart-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                <div class="col-project">
+                  <div class="card">
+                    <a href="#" target="_blank" class="project-card-btn">Lihat&nbsp;Detail</a>
+                    <img src="/asset/img/img2.jpg" alt="project" class="card-top" media="(max-width=767px)">
+                    <div class="card-caption">
+                      <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-project">
+                  <div class="card">
+                    <a href="#" target="_blank" class="project-card-btn">Lihat&nbsp;Detail</a>
+                    <img src="/asset/img/img3.png" alt="project" class="card-top">
+                    <div class="card-caption">
+                      <p class="cart-text">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </section>
+        <!-- Pengalaman Kerja -->
+        <section class="section" id="work">
+
+          <div class="work-container">
+            <div class="top-header">
+              <h1>Riwayat Pekerjaan</h1>
+            </div>
+            <div class="container-conten-work">
+                <div class="conten-work">
+                    <ul>
+                        <li>
+                            <div class="work-item">
+                                <div class="work-title">
+                                    <span class="color_line">Prakerin di CV Smart Computer</span>
+                                </div>
+                                <div class="work-description">
+                                    <p>Praktek Kerja Industri meliputi&nbsp; Servise Hardware & Software komputer, servise jaringan internet berbasis lokal (wireless / wired)</p>
+                                </div>
+                                <div class="work-time">
+                                    <p>Periode 2015</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="work-item">
+                                <div class="work-title">
+                                    <p class="color_line">PT Honda Prospect Motor (HPM)</p>
+                                </div>
+                                <div class="work-description">
+                                    <p>Operator Produksi&nbsp;: Sub Assy Door Left</p>
+                                </div>
+                                <div class="work-time">
+                                    <p>Periode 2016-2018</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="work-item">
+                                <div class="work-title">
+                                    <p class="color_line">Electrikal Electro</p>
+                                </div>
+                                <div class="work-description">
+                                    <p>PT NJI : Project Apartemen Pasar Rumput => Intsalasi security system, smoke detector, hydrant security, cctv</p>
+                                </div>
+                                <div class="work-time">
+                                    <p>Periode 2019</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="work-item">
+                                <div class="work-title">
+                                    <p class="color_line">PT LEN Industry</p>
+                                </div>
+                                <div class="work-description">
+                                    <p>Project Bandar Udara New Yogyakarta International Airport (YIA) : Public Addresing System (Sound System) bandar udara.</p>
+                                </div>
+                                <div class="work-time">
+                                    <p>Periode 2020</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="work-item">
+                                <div class="work-title">
+                                    <p class="color_line">PT Citra Palma</p>
+                                </div>
+                                <div class="work-description">
+                                    <p>Pekerja Pemanen Buah Kelapa Sawit</p>
+                                </div>
+                                <div class="work-time">
+                                    <p>Periode 2022 - 2023</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- --------- Kontak --------- -->
+        <section class="section" id="kontak">
+
+          <div class="top-header">
+            <h1>Open To Work</h1>
+            <span>Undangan pekerjaan Anda sangat saya Harapkan</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="kontak-info">
+                <h2>Hubungi Saya <ion-icon name="return-down-back-outline"></ion-icon></h2>
+                <p><ion-icon name="mail-outline"></ion-icon>cputera4@gmail.com</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-card">
+                <div class="form-input">
+                  <input type="text" class="input-field" placeholder="Nama">
+                  <input type="text" class="input-field" placeholder="Email" required>
+                </div>
+                <div class="text-area">
+                  <textarea name="Pesan" id="" placeholder="Tinggalkan Pesan Anda"></textarea>
+                </div>
+                <div class="form-btn">
+                  <button class="btn-kirim">Kirim <ion-icon name="send-outline"></ion-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+      <!-- --------- footer ---------  -->
+      <footer>
+        
+        <div class="top-footer">
+          <span class="nav-name">c'</span>
+          <p>Putra</p>
+        </div>
+        <div class="mid-footer">
+          <ul class="footer-menu">
+            <li class="footer-menu-list">
+              <a href="#beranda">Beranda</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tentang</a>
+            <li class="footer-menu-list">
+              <a href="#profil">Profil</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projek</a>
+            <li class="footer-menu-list">
+              <a href="#project">Project</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galeri</a>
+            <li class="footer-menu-list">
+              <a href="#work">Pekerjaan</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sosmed</a>
-            </li>
-         </ul>
-       </div>
-      </div>
-    </nav>
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/profil.jpg" alt="Kurnia DC Putra" width="200" class="rounded-circle img-thumbnail">
-      <h2 class="display-5">Kurnia DC Putra</h2>
-      <p class="lead">Designer | Editor | Traveller</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-        fill="#fff"
-        fill-opacity="1"
-        d="M0,160L80,138.7C160,117,320,75,480,96C640,117,800,203,960,197.3C1120,192,1280,96,1360,48L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-        </path>
-      </svg>
-    </section>
-    <!-- Tentang -->
-    <section id="tentang">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Tentang Saya</h2>
-          </div>
+          </ul>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quos, soluta necessitatibus amet reprehenderit eius esse. Molestiae animi harum aut?</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sed quae! Minima similique sed fugit sunt, quos ipsa numquam vel soluta fugiat? Assumenda asperiores modi dolorem neque.</p>
-          </div>
+        <div class="footer-sosmed-icon">
+          <div class="icon"><ion-icon name="logo-facebook"></ion-icon></div>
+          <div class="icon"><ion-icon name="logo-github"></ion-icon></div>
+          <div class="icon"><ion-icon name="logo-instagram"></ion-icon></div>
+          <div class="icon"><ion-icon name="logo-tiktok"></ion-icon></div>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ddf8fb" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,112C384,128,480,192,576,202.7C672,213,768,171,864,176C960,181,1056,235,1152,261.3C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    </section>
-    <!-- Projek -->
-    <section id="projek">
-      <div class="container">
-        <div class="row text-center justify-content-center">
-          <div class="col mb-4">
-            <h2>Projek Saya</h2>
-          </div>
+        <div class="bottom-footer">
+          <p>Portfolio c'putra &copy; 2023</p>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projek1.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projek2.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projek3.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projek4.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projek5.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffffff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,128C384,107,480,117,576,149.3C672,181,768,235,864,234.7C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
-      </svg>
-    </section>
-    <!-- Galeri -->
-    <section id="galeri">
-      <div class="container">
-        <div class="row text-center justify-content-center">
-          <div class="col mb-4">
-            <h2>Galeri Saya</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/Travel1.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/travel2.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/travel3.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/Travel4.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/travel5.jpeg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/Travel6.jpg" alt="gunung1" class="card-img-top">
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ddf8fb" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,250.7C384,267,480,245,576,229.3C672,213,768,203,864,192C960,181,1056,171,1152,154.7C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
-      </svg>
-    </section>
-    <!-- Kontak -->
-    <section id="kontak">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col">
-            <h2 class="text-center mb-3">Hubungi kami</h2>
-            <form>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="nama">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email">
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary mb-5">Kirim</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#16bbd8" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,149.3C672,160,768,224,864,245.3C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    </section>
-    <!-- Footer -->
-    <footer class="text-light text-center">
-      <p>Created with Love by <a href="https://www.instagram.com/kurnia_deph/" class="text-light fw-bold">Kurnia Deph</a></p>
-    </footer>
+
+      </footer>
 
 
+    </div>
+    <!-- Animation by GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Typing Script -->
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>   -->
+    <script src="./Script/typed.js"></script>
+    <!-- Scroll Reveal Script -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="./Script/scrolling.js"></script>
+    <script src="./Script/script.js"></script>
+      
   </body>
-
+  
 </html>

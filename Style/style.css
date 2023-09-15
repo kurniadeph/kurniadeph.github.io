@@ -115,6 +115,9 @@ nav{
 .nav-menu-btn{
   display: none;
 }
+.nav-menu-btn.hover{
+  display: none;
+}
 .nav-menu-btn ion-icon{
   font-size: 46px;
   cursor: pointer;
@@ -212,9 +215,6 @@ nav{
   box-shadow: 0px 2px 5px 0px  rgba(0,0,0,0.25);
   cursor: pointer;
 }
-/* .icon:hover{
-  color: var(--color-white);
-} */
 .social-icon .icon{
  font-size: 50px;
  transition: 1s;
@@ -240,11 +240,9 @@ nav{
 }
 .image img{
   position: relative;
-  /* top: 90px; */
-  /* left: 30px; */
-  width: 480px;
+  width: 280px;
   height: 580px;
-  object-fit: contain;
+  /* object-fit: cover; */
 }
 @keyframes imgFloat{
   50%{
@@ -343,7 +341,7 @@ h3{
   padding: 2px 10px;
   border-radius: 5px;
 }
-/* --------- Project Box --------- */
+/* --------- Project Galeri Box --------- */
 .project-container{
   margin: auto;
   display: flex;
@@ -367,7 +365,6 @@ h3{
   cursor: pointer;
   transition: .4s;
 }
-
 .article-img{
   position: absolute;
   top: 0px;
@@ -400,6 +397,15 @@ h3{
 .title h3{
   margin-bottom: 16px;
 }
+.coming-soon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-style: italic;
+  color: red;
+}
 /* BATAS FITUR GALERI */
 .work-container{
   width: 100%;
@@ -408,20 +414,6 @@ h3{
   flex-direction: column;
   position: relative;
 }
-/* .top-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
-} */
-/* .timeline{
-  background: var(--bg-color-v2);
-  width: 100px;
-  height: 20px;
-  border-left: 2px solid red;
-  left: 20px;
-  height: ;
-} */
 /* --------- WORK BOX -------- */
 .container-conten-work{
   width: 100%;
@@ -466,58 +458,6 @@ h3{
   font-style: italic;
   color: var(--text-color-p);
 }
-@media only screen and (min-width: 768px){
-  .conten-work::before{
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 3px;
-      background: #a4a4a4;
-      left: 50%;
-      transform: translateX(-50%);
-  }
-  .conten-work ul li{
-      width: 50%;
-      margin-bottom: 20px;
-  }
-  .conten-work ul li:nth-child(odd){
-      float: left;
-      clear: right;
-      transform: translateX(-40px);
-      border-radius: 10px 0 20px 10px;
-  }
-  .conten-work ul li:nth-child(even){
-      float: right;
-      clear: left;
-      transform: translateX(40px);
-      border-radius: 0 10px 10px 20px;
-  }
-  .conten-work ul li::after{
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: #a4a4a4;
-      border-radius: 50%;
-      top: 0;
-  }
-  .conten-work ul li:nth-child(odd)::after{
-      right: 0;
-      transform: translate(50%, -50%);
-      right: -40px;
-  }
-  .conten-work ul li:nth-child(even)::after{
-      left: 0;
-      transform: translate(-50%, -50%);
-      left: -40px;
-  }
-  .conten-work ul li:hover:after{
-      background: var(--main-color);
-      box-shadow: 0px 1px 8px 8px rgba(25, 179, 235, 0.15);
-      transition: .4s;
-  }
-}
-
 /* -------- KONTAK BOX -------- */
 .kontak-info{
   position: relative;
@@ -590,10 +530,10 @@ h3{
 textarea{
   width: 100%;
   height: 270px;
-  border-radius: 20px;
+  border-radius: 14px;
   background: transparent;
   border: 2px solid var(--text-color-p);
-  padding: 15px 20px;
+  padding: 15px 15px;
   outline: none;
   resize: none;
 }
@@ -679,23 +619,13 @@ footer{
   color: var(--text-color-p);
 }
 
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-@media only screen and (max-width: 540px) {
-  .feature-text-name{
-    font-size: 40px;
-  }
-  .project-container{
-    width: 100%;
-  }
-  .form-input{
-    flex-direction: column;
-  }
-  .input-field{
-    width: 100%;
+/* ----- MEDIA QUERY == RESPONSIVE ----- */
+@media only screen and (max-width: 620px) {
+  .scroll-btn{
+    margin-bottom: -30px;
   }
 }
-/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 767px){
   .nav-menu-btn{
     display: none;
   }
@@ -709,8 +639,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
     width: 100%;
     height: 90vh;
     transition: .3s;
@@ -727,13 +657,29 @@ footer{
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    margin-bottom: 120px;
   }
   .style-text{
     width: 100%;
     order: 2;
     justify-content: center;
     align-items: flex-start;
-    min-height: 60vh;
+    min-height: 55vh;
+    top: -15px;
+  }
+  .style-text-name{
+    margin-bottom: -15px;
+  }
+  .style-text-name span{
+    font-size: 14px;
+  }
+  .style-text-lead{
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .style-text-caption{
+    font-size: 12px;
+    margin-bottom: 10px;
   }
   .social-icon{
     margin-top: 2em;
@@ -741,13 +687,17 @@ footer{
   .style-image{
     order: 1;
     justify-content: center;
-    min-height: 150px;
+    min-height: 120px;
     width: 100%;
     margin-top: 0;
+    top: -30px;
   }
   .image, .image img{
-    width: 320px;
-    height: 370px;
+    width: 280px;
+    height: 290px;
+  }
+  .style-scroll-box{
+    margin-bottom: 20px;
   }
   .row{
     display: flex;
@@ -761,8 +711,14 @@ footer{
     width: 100%;
     gap: 12px;
   }
+  .top-header{
+    margin-bottom: 60px;
+  }
   .profil-info, .kontak-info{
     width: 100%;
+  }
+  .profil-info{
+    margin-bottom: 120px;
   }
   .project-container{
     justify-content: center;
@@ -770,15 +726,75 @@ footer{
   .card{
     width: 80%;
   }
-
 }
-/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px;){
-  .style-text{
+
+@media only screen and (min-width: 768px){
+  .style-box{
+    margin: 0;
     padding: 0;
+    margin-bottom: 50px;
+  }
+  .scroll-btn{
+    margin-bottom: 160px;
+  }
+  .style-text-lead{
+    font-size: 45px;
+  }
+  .style-text{
+    padding-top: 20px;
+    margin-top: -120px;
   }
   .image, .image img{
-    width: 1020px;
-    height: 1020px;
+    width: 100%;
+    height: 450px;
+  }
+  .conten-work::before{
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 3px;
+      background: #a4a4a4;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  .conten-work ul li{
+      width: 50%;
+      margin-bottom: 20px;
+  }
+  .conten-work ul li:nth-child(odd){
+      float: left;
+      clear: right;
+      transform: translateX(-40px);
+      border-radius: 10px 0 20px 10px;
+  }
+  .conten-work ul li:nth-child(even){
+      float: right;
+      clear: left;
+      transform: translateX(40px);
+      border-radius: 0 10px 10px 20px;
+  }
+  .conten-work ul li::after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #a4a4a4;
+      border-radius: 50%;
+      top: 0;
+  }
+  .conten-work ul li:nth-child(odd)::after{
+      right: 0;
+      transform: translate(50%, -50%);
+      right: -40px;
+  }
+  .conten-work ul li:nth-child(even)::after{
+      left: 0;
+      transform: translate(-50%, -50%);
+      left: -40px;
+  }
+  .conten-work ul li:hover:after{
+      background: var(--main-color);
+      box-shadow: 0px 1px 8px 8px rgba(25, 179, 235, 0.15);
+      transition: .4s;
   }
 }

@@ -33,53 +33,6 @@ let typingEffect = new Typed(".typeText",{
     backDelay : 2000
 })
 
-/* -----# SCROLLING ANIMATION #----- */
-const sr = ScrollReveal({
-      origin = 'top',
-      distance = '80px',
-      duration = 2000,
-      reset = true
-})
-/* ----- HOME ----- */
-sr.reveal('.style-text-box',{})
-sr.reveal('.style-text-name',{delay: 100})
-sr.reveal('.style-text-caption',{delay: 200})
-sr.reveal('.style-text-btn',{delay: 200})
-sr.reveal('.social-icon',{delay: 200})
-sr.reveal('.style-image',{delay: 300})
-
-/* ----- Project Box ----- */
-sr.reveal('.col-project',{interval: 200})
-
-/* ----- Heading ----- */
-sr.reveal('.top-header',{})
-
-/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
-
-/* -- ABOUT INFO & CONTACT INFO -- */
-
-const srLeft = ScrollReveal({
-  origin: 'left',
-  distance: '80px',
-  duration: 2000,
-  reset: true
-})
-
-srleft.reveal('.profil-info',{delay: 100})
-srleft.reveal('.kontak-info',{delay: 100})
-
-/* -- Skill & Kontak Info -- */
-
-const srRight = ScrollReveal({
-  origin: 'right',
-  distance: '80px',
-  duration: 2000,
-  reset: true
-})
-
-srleft.reveal('.skill-box',{delay: 100})
-srleft.reveal('.form-card',{delay: 100})
-
 /* ----- CHANGE ACTIVE LINK ----- */
 
 const sections = document.querySelectorAll('section[id]')

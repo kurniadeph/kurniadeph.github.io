@@ -1,13 +1,15 @@
 /* ------- SCRIPT NAV BAR FUNCTION ------- */
-function myMenuFunction(){
+function myMenuFunction(iconX){
+    iconX.classList.toggle('changeX')
     let menuBtn = document.getElementById("myNavMenu");
 
-    if (menuBtn.className === "nav-menu") {
+    if (menuBtn.className == "nav-menu") {
         menuBtn.className += " responsive";
     } else {
         menuBtn.className = "nav-menu";
     }
-}
+};
+
 /* ----- ADD SHADOW ON NAV BAR WHILE SCROLLING ----- */
 window.onscroll = function() {headerShadow()};
 
@@ -23,7 +25,7 @@ function headerShadow() {
         navHeader.style.height = "90px";
         navHeader.style.lineHeight = "90px";
     }
-}
+};
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typeText",{
     string : [],
@@ -31,8 +33,7 @@ let typingEffect = new Typed(".typeText",{
     typeSpeed : 100,
     backSpeed : 80,
     backDelay : 2000
-})
-
+});
 /* ----- CHANGE ACTIVE LINK ----- */
 
 const sections = document.querySelectorAll('section[id]')

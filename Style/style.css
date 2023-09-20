@@ -272,6 +272,8 @@ nav{
   position: relative;
   width: 280px;
   height: 580px;
+  /* object-fit: cover; */
+}
 @keyframes imgFloat{
   50%{
     transform: translateY(10px);
@@ -640,7 +642,6 @@ footer{
   gap: 30px;
   color: var(--text-color-main);
 }
-
 .bottom-footer{
   font-size: 14px;
   margin-top: 10px;
